@@ -1,6 +1,6 @@
 [tools]
-node = "22"
-npm = "11.13.0"
+node = "24"
+pnpm = "10"
 
 [tasks.test]
 run = [
@@ -40,8 +40,8 @@ run = "npx oxlint --config ./.config/.oxlintrc.json"
 
 [tasks.update]
 run = [
-  "npx npm-check-updates --target minor -u --cooldown 3",
-  "npm install",
+  "npx npm-check-updates --target minor -u --cooldown 7 --reject oxfmt --reject oxlint --reject oxlint-tsgolint",
+  "pnpm install",
   "npx playwright install --with-deps",
-  "npm audit",
+  "pnpm audit",
 ]
