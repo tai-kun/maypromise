@@ -1,9 +1,16 @@
 /**
+ * 同期的な値、または Promise のいずれかであることを表す型です。
+ *
+ * @template T 解決される値の型です。
+ */
+type MaybePromise<T> = T | Promise<T>;
+
+/**
  * 同期的な値、または Promise のような非同期的な値のいずれかであることを表す型です。
  *
  * @template T 解決される値の型です。
  */
-type MaybePromise<T> = T | PromiseLike<T>;
+type MaybePromiseLike<T> = T | PromiseLike<T>;
 
 /**
  * then メソッドを持つオブジェクト（Thenable オブジェクト）のインターフェースです。
@@ -44,5 +51,5 @@ function isThenable(value: unknown): boolean {
   );
 }
 
-export type { MaybePromise, Thenable };
+export type { Thenable, MaybePromise, MaybePromiseLike };
 export { isThenable };
