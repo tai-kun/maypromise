@@ -129,8 +129,10 @@ describe("Thenable ではない値の場合", () => {
 
 describe("型推論", () => {
   test("isThenable 関数で真と判定されたとき、値の型が Thenable に絞り込まれる", ({ expect }) => {
+    // Arrange
     const value: unknown = Promise.resolve(42);
 
+    // Act & Assert
     if (isThenable(value)) {
       expectTypeOf(value).toEqualTypeOf<Thenable>();
       expectTypeOf(value).not.toEqualTypeOf<PromiseLike<any>>();
@@ -142,8 +144,10 @@ describe("型推論", () => {
   test("isThenable 関数に型引数を指定して真と判定されたとき、値の型が PromiseLike に絞り込まれる", ({
     expect,
   }) => {
+    // Arrange
     const value: unknown = Promise.resolve(42);
 
+    // Act & Assert
     if (isThenable<number>(value)) {
       expectTypeOf(value).not.toEqualTypeOf<Thenable>();
       expectTypeOf(value).toEqualTypeOf<PromiseLike<number>>();
