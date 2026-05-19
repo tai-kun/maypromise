@@ -34,7 +34,7 @@
     "@types/node": "^24.12.4",
     "@vitest/browser": "^4.1.6",
     "@vitest/browser-playwright": "^4.1.6",
-    "npm-check-updates": "^20.0.2",
+    "npm-check-updates": "^22.2.0",
     "oxfmt": "0.45.0",
     "oxlint": "1.60.0",
     "oxlint-tsgolint": "0.21.1",

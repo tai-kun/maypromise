@@ -24,8 +24,8 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(playwright@1.60.0)(vite@8.0.12(@types/node@24.12.4))(vitest@4.1.6)
       npm-check-updates:
-        specifier: ^20.0.2
-        version: 20.0.2
+        specifier: ^22.2.0
+        version: 22.2.0
       oxfmt:
         specifier: 0.45.0
         version: 0.45.0
@@ -643,9 +643,9 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  npm-check-updates@20.0.2:
-    resolution: {integrity: sha512-nvbcXiprjMOoSX0FCHC41kjpZhNFURV53KMU0MMa0U10RPHeoHpiilMg2P8g9NLSQoo0umSH77tUqHWTOH3w7A==}
-    engines: {node: '>=20.0.0', npm: '>=8.12.1'}
+  npm-check-updates@22.2.0:
+    resolution: {integrity: sha512-kaxgbkGkCOtoSrsUXShgcEiEfrRPqmOGk6Yeya+5hoNptblu9vuE8/PLABUSJz+IeNgKJBFxcC3UrBYmKsB8iA==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: '>=10.0.0'}
     hasBin: true
 
   obug@2.1.1:
@@ -1249,7 +1249,7 @@ snapshots:
 
   nanoid@3.3.12: {}
 
-  npm-check-updates@20.0.2: {}
+  npm-check-updates@22.2.0: {}
 
   obug@2.1.1: {}
 
