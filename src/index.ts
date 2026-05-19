@@ -29,6 +29,8 @@ function isThenable(value: unknown): value is Thenable;
 /**
  * 指定された値が PromiseLike であるかどうかを判定します。
  *
+ * この関数は、then メソッドが PromiseLike を返すことを前提とする場合に使用されます。判定対象の値が本当に PromiseLike であるかどうか検証するためには、追加の独自検証が必要です。
+ *
  * @template T 解決される値の型です。
  * @param value 判定対象の値です。
  * @returns 値が PromiseLike であれば true、そうでなければ false を返します。
